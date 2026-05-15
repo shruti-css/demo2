@@ -1,0 +1,15 @@
+stages:
+  - deploy
+
+pages:
+  stage: deploy
+
+  script:
+    - echo "Deploying website"
+
+  artifacts:
+    paths:
+      - public
+
+  only:
+    - main
